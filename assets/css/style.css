@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #5faee3;
+  color: rgb(103, 7, 23);
   text-decoration: none;
 }
 
@@ -32,6 +32,39 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+/*-- Loader --*/
+.loading_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+    z-index: 2000;
+  }
+  .cover_container {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  .loader {
+    border: 8px solid #e9ecef;
+    border-radius: 50%;
+    border-top: 8px solid rgb(200, 16, 46);
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -57,7 +90,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #57aae1;
+  background: rgb(103, 7, 23);
   color: #fff;
 }
 
@@ -172,7 +205,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #4aa3df;
+  background: rgb(103, 7, 23);
 }
 
 .navbar .dropdown ul {
@@ -576,7 +609,7 @@ section {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.about .content .btn-learn-more,.btn-learn-more {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -592,7 +625,7 @@ section {
   border: 2px solid rgb(200, 16, 46);
 }
 
-.about .content .btn-learn-more:hover {
+.about .content .btn-learn-more:hover,.btn-learn-more:hover {
   background: rgb(200, 16, 46);
   color: #fff;
   text-decoration: none;
